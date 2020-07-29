@@ -1,13 +1,26 @@
 ## 02 - Components
 
-### Input component
+1. Create a new folder called `features` inside the `src` folder
 
-1. In the "src" folder, create a new file called "Input.js"
-2. In the file, create a "Input" component that renders an input element using the JSX syntax
-3. In the "App.js", import the "Input" component and render it
+2. Create a `Navbar` component that renders the follow code:
 
-### Button component
+   ```jsx
+   <header>
+     <a href="/" className="brand">
+       Trendie
+     </a>
+     <a href="/create-product">Create product</a>
+   </header>
+   ```
 
-1. In the "src" folder, create a new file called "Button.js"
-2. In the file, create a "Button" component that renders a button element using the JSX syntax
-3. In the "App.js", import the "Button" component and render it after the "Input" component
+3. Render the `Navbar` component inside the `App` component
+
+4. Replace the content of the `index.css` file with the content inside the `index.css` from the `start` folder
+
+5. Apply an inline style to the `h1` element inside the `App` component
+
+   ```jsx
+   <h1 style={{ padding: '4rem 0', margin: '0 auto', maxWidth: 1200 }}>
+     Hello React
+   </h1>
+   ```
