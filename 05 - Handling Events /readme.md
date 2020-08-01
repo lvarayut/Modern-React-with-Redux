@@ -1,21 +1,58 @@
 ## 05 - Handling Events
 
-### Creating a form validation
+### AddForm component
 
-**Input component**
+1. Create an `AddForm` component in the `Product` folder
+2. Accept an `addProduct` property, which is a function used to add a new product
+3. Create `name`, `imageURL`, and `type` states, their initial states should be set to empty string
+4. Render the following code
 
-1. Create an Input component
-2. It should accept `type`, `value`, `onChange` as properties and render an input element
+   ```jsx
+   <div>
+     <h1>Add Product</h1>
+     <form id="create-form">
+       <div className="input-group">
+         <label htmlFor="name">Name</label>
+         <input name="name" type="text" id="name" />
+       </div>
 
-**Form component**
+       <div className=" input-group">
+         <label htmlFor="type">Image URL</label>
+         <input name="type" type="text" id="type" />
+       </div>
 
-1. Create a Form component
-2. It should render a form element
-3. Create two states to be passed to two Input components
-4. Create an `onChange` handler that is used to update the state
-5. Inside the form element, it should render the two Input components
-   - Input component with "email" type
-   - Input component with "password" type
-6. While a user types in the input fields, validate the length of the input data:
-   - If it is less than 8 characters, change the border of the input field to red
-   - Otherwise, change the border of the input field to green
+       <div className=" input-group">
+         <label htmlFor="type">Type</label>
+         <input name="type" type="text" id="type" />
+       </div>
+
+       <button type="submit">Add product</button>
+     </form>
+   </div>
+   ```
+
+5. Each input field, set a `value` property and bind an `onChange` event
+6. Bind an `onSubmit` event to the `form` element, it should call the `addProduct` function and pass a new product object as:
+
+   ```jsx
+   addProduct({ name, type, imageURL });
+   ```
+
+   > Note that you also need to use event.preventDefault() to prevent the page from refreshing
+
+7. Use the `prop-types` package to validate the property
+
+### Home component
+
+1. Create a `currentProductId` variable outside of the functional component and set it to `9`
+
+2. Create the `addProduct` function:
+
+   ```jsx
+   function addProduct(product) {
+     const newProduct = { id: ++currentProductId, ...product };
+     setProducts([...products, newProduct]);
+   }
+   ```
+
+3. Render the `AddForm` component and pass the `addProduct` function as a property
