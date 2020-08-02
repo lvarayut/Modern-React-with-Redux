@@ -1,27 +1,29 @@
 ## 06 - Rendering
 
-### Rendering users
+### AddForm component
 
-Given the following `users` array
+1. In the browser, inspect the elements that the `AddForm` component renders
+2. Replace the most outer `div` element with the Fragment
 
-```js
-const users = [
-  {
-    id: 1,
-    name: 'John',
-    isActive: false
-  },
-  {
-    id: 2,
-    name: 'Jane',
-    isActive: true
-  }
-];
-```
+### App component
 
-**User component**
+1. Replace the most outer `div` element with the Fragment
 
-1. Create an User component
-2. It should accept `user` as a property
-3. It should render a `div` tag that contains "User's id is `<id>` and User's name is `<name>`
-4. However, if the user is inactive, it should also have "(inactive)" at the end of the div content
+### Home component
+
+1. Replace the most outer `div` element with the Fragment
+2. Use Ternary to conditionally render the `ul` element as following:
+
+   ```jsx
+   {
+     products.length > 0 ? (
+       <ul className="Home__products">
+         {products.map((product) => (
+           <Product key={product.id} item={product} />
+         ))}
+       </ul>
+     ) : (
+       <div>Loading products....</div>
+     );
+   }
+   ```
