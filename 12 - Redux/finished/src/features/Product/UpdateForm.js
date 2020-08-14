@@ -68,7 +68,7 @@ export default function UpdateForm() {
           className="UpdateForm__delete-button"
           onClick={onDelete}
         >
-          Delete restaurant
+          Delete product
         </button>
         <button type="submit">Update product</button>
       </form>

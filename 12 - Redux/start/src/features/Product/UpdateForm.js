@@ -47,7 +47,7 @@ export default function UpdateForm() {
         </div>
 
         <button type="button" className="UpdateForm__delete-button">
-          Delete restaurant
+          Delete product
         </button>
         <button type="submit">Update product</button>
       </form>
