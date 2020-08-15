@@ -17,8 +17,8 @@
        </div>
 
        <div className=" input-group">
-         <label htmlFor="type">Image URL</label>
-         <input name="type" type="text" id="type" />
+         <label htmlFor="imageURL">Image URL</label>
+         <input name="imageURL" type="text" id="imageURL" />
        </div>
 
        <div className=" input-group">

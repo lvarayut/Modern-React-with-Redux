@@ -33,11 +33,11 @@ function AddForm() {
         </div>
 
         <div className=" input-group">
-          <label htmlFor="type">Image URL</label>
+          <label htmlFor="imageURL">Image URL</label>
           <input
-            name="type"
+            name="imageURL"
             type="text"
-            id="type"
+            id="imageURL"
             value={imageURL}
             onChange={(event) => setImageURL(event.target.value)}
           />
