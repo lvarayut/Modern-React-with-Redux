@@ -27,4 +27,8 @@
 
 7. Remove import statements that cause errors in the `src/App.js` and `src/index.js` files
 
-8. In the `App.js`, replace all elements in the return function with <h1>Hello React</h1>
+8. In the `App.js`, replace all elements in the return function with
+
+   ```jsx
+   <h1>Hello React</h1>
+   ```
