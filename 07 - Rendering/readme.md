@@ -1,4 +1,8 @@
-## 06 - Rendering
+## 07 - Rendering
+
+<div align="center">
+   <img  alt="Final result" src="https://user-images.githubusercontent.com/4281887/93013886-70a6af80-f5d6-11ea-8846-8847faee6fc1.png">
+</div>
 
 ### AddForm component
 

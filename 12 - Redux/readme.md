@@ -1,6 +1,10 @@
 ## 12 - Redux
 
-### Install React Developer Tools
+<div align="center">
+   <img  alt="Final result" src="https://user-images.githubusercontent.com/4281887/93014226-849fe080-f5d9-11ea-919e-0d32f971b10d.png">
+</div>
+
+### Installing React Developer Tools
 
 1. Access [Redux Developer Tools for Chrome](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
 2. Install the extension

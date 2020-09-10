@@ -1,4 +1,8 @@
-## 03 - State & Props
+## 04 - State & Props
+
+<div align="center">
+   <img  alt="Final result" src="https://user-images.githubusercontent.com/4281887/93013658-ad71a700-f5d4-11ea-9dcf-ffa388e830b6.png">
+</div>
 
 ### Container component
 
@@ -52,27 +56,29 @@
 
 4. In `index.js`, create a `Product` component that should :
 
-- Accept a property called `item`
+   - Accept a property called `item`
 
-- Import an image dynamically by using:
+   - Import an image dynamically by using:
 
-  ```jsx
-  const productImage = require(`../../assets/${item.imageURL}`);
-  ```
+     ```jsx
+     const productImage = require(`../../assets/${item.imageURL}`);
+     ```
 
-- Render the following code:
+   - Render the following code:
 
-  ```jsx
-  <li className="Products">
-    <a href={`/update-product/${item.id}`}>
-      <img className="Products__image" src={productImage} alt={item.name} />
-      <div className="Products__name">{item.name}</div>
-      <small className="Products__type">{item.type}</small>
-    </a>
-  </li>
-  ```
+     ```jsx
+     <li className="Products">
+       <a href={`/update-product/${item.id}`}>
+         <img className="Products__image" src={productImage} alt={item.name} />
+         <div className="Products__name">{item.name}</div>
+         <small className="Products__type">{item.type}</small>
+       </a>
+     </li>
+     ```
 
-5. In the `Home` component, replace the `li` element with the `Product` component
+### Home component
+
+1. Replace the `li` element with the `Product` component
 
 ### PropTypes
 

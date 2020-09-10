@@ -1,5 +1,9 @@
 ## 11 - React Router
 
+<div align="center">
+   <img  alt="Final result" src="https://user-images.githubusercontent.com/4281887/93014110-65ed1a00-f5d8-11ea-9fef-01f9cd812673.png">
+</div>
+
 ### Prerequisite
 
 1. Install the `react-router-dom` package:
@@ -35,7 +39,7 @@
    </Container>
    ```
 
-   > There will be the `Failed prop type: The prop`addProduct`is marked as required...` in the console. Ignore it for now
+   > There will be the `Failed prop type: The prop `addProduct`is marked as required...` in the console. Ignore it for now
 
 3. In the `Home` component, remove the rendering of `AddForm` component, the `addProduct` function, and the `currentProductId` variable
 

@@ -1,4 +1,8 @@
-## 05 - Handling Events
+## 06 - Handling Events
+
+<div align="center">
+   <img  alt="Final result" src="https://user-images.githubusercontent.com/4281887/93013787-cfb7f480-f5d5-11ea-9aea-bf025f264b17.png">
+</div>
 
 ### AddForm component
 

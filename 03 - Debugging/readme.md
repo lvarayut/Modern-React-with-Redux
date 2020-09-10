@@ -1,4 +1,4 @@
-## 07 - Debugging
+## 03 - Debugging
 
 ### Install React Developer Tools
 
