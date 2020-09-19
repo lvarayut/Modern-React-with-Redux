@@ -28,6 +28,6 @@
        </ul>
      ) : (
        <div>Loading products....</div>
-     );
+     )
    }
    ```
