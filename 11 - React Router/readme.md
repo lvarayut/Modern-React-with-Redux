@@ -39,7 +39,7 @@
    </Container>
    ```
 
-   > There will be the `Failed prop type: The prop `addProduct`is marked as required...` in the console. Ignore it for now
+   > You will not be able to add a new product, we will fix it in the next lesson. Moreover, there will be the `Failed prop type: The prop `addProduct`is marked as required...` in the console. Ignore it for now
 
 3. In the `Home` component, remove the rendering of `AddForm` component, the `addProduct` function, and the `currentProductId` variable
 
