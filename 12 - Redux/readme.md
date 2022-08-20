@@ -130,15 +130,15 @@
 
    ```jsx
    import { useDispatch } from 'react-redux';
-   import { useHistory } from 'react-router-dom';
+   import { useNavigate } from 'react-router-dom';
    ...
    const dispatch = useDispatch();
-   const history = useHistory();
+   const navigate = useNavigate();
 
    function onSubmit(event) {
      event.preventDefault();
      dispatch(addProduct({ name, type, imageURL }));
-     history.push('/');
+     navigate('/');
    }
    ```
 
@@ -179,12 +179,12 @@
 
      ```jsx
      const dispatch = useDispatch();
-     const history = useHistory();
+     const navigate = useNavigate();
 
      const onSubmit = (event) => {
        event.preventDefault();
        dispatch(updateProduct({ id: product.id, name, type, imageURL }));
-       history.push('/');
+       navigate('/');
      };
      ```
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
 import { addProduct } from './actions';
@@ -9,12 +9,12 @@ function AddForm() {
   const [imageURL, setImageURL] = useState('');
   const [type, setType] = useState('');
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   function onSubmit(event) {
     event.preventDefault();
     dispatch(addProduct({ name, type, imageURL }));
-    history.push('/');
+    navigate('/');
   }
 
   return (

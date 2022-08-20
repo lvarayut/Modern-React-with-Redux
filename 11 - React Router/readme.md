@@ -24,18 +24,14 @@
    </React.StrictMode>
    ```
 
-2. In the `App` component, use the `Switch` and `Route` component to setup these two paths:
+2. In the `App` component, use the `Routes` and `Route` component to setup these two paths:
 
    ```jsx
    <Container>
-     <Switch>
-       <Route path="/create-product">
-         <AddForm />
-       </Route>
-       <Route path="/">
-         <Home />
-       </Route>
-     </Switch>
+     <Routes>
+       <Route path="/create-product" element=<AddForm /> />
+       <Route path="/" element={<Home />} />
+     </Routes>
    </Container>
    ```
 
@@ -94,9 +90,7 @@
 6. In the `App` component, add another route for the `/update-product/:id` path:
 
    ```jsx
-   <Route path="/update-product/:id">
-     <UpdateForm />
-   </Route>
+   <Route path="/update-product/:id" element={<UpdateForm />} />
    ```
 
 ### Lifting the state up
@@ -116,17 +110,11 @@
      ```jsx
      <Container>
        {products.length > 0 ? (
-         <Switch>
-           <Route path="/create-product">
-             <AddForm />
-           </Route>
-           <Route path="/update-product/:id">
-             <UpdateForm />
-           </Route>
-           <Route path="/">
-             <Home products={products} />
-           </Route>
-         </Switch>
+         <Routes>
+           <Route path="/create-product" element={<AddForm />} />
+           <Route path="/update-product/:id" element={<UpdateForm />} />
+           <Routes path="/" element={<Home products={products} />} />
+         </Routes>
        ) : (
          <div>Loading products....</div>
        )}

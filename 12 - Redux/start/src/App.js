@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 
 import Navbar from './features/Navbar';
@@ -29,17 +29,11 @@ function App() {
       <Navbar />
       <Container>
         {products.length > 0 ? (
-          <Switch>
-            <Route path="/create-product">
-              <AddForm />
-            </Route>
-            <Route path="/update-product/:id">
-              <UpdateForm />
-            </Route>
-            <Route path="/">
-              <Home products={products} />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/create-product" element={<AddForm />} />
+            <Route path="/update-product/:id" element={<UpdateForm />} />
+            <Route path="/" element={<Home products={products} />} />
+          </Routes>
         ) : (
           <div>Loading products....</div>
         )}

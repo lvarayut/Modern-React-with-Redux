@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { updateProduct, deleteProduct } from './actions';
@@ -14,16 +14,16 @@ export default function UpdateForm() {
   const [imageURL, setImageURL] = useState(product.imageURL);
 
   const dispatch = useDispatch();
-  const history = useHistory();
+  const navigate = useNavigate();
   const onSubmit = (event) => {
     event.preventDefault();
     dispatch(updateProduct({ id: product.id, name, type, imageURL }));
-    history.push('/');
+    navigate('/');
   };
 
   const onDelete = () => {
     dispatch(deleteProduct({ id: product.id }));
-    history.push('/');
+    navigate('/');
   };
 
   return (
