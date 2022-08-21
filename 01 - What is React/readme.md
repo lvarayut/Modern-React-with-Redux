@@ -9,7 +9,7 @@
 1. Create a new react application using the `create-react-app` command line. The following command automatically runs the `npm install` command. Therefore, you do not need to install the dependencies separately
 
    ```
-   npx create-react-app react-app --use-npm
+   npx create-react-app react-app
    ```
 
 2. Start a server
