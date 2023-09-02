@@ -206,6 +206,6 @@
    ```jsx
    const onDelete = () => {
      dispatch(deleteProduct({ id: product.id }));
-     history.push('/');
+     navigate('/');
    };
    ```
