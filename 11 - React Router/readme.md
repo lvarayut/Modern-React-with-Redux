@@ -97,7 +97,7 @@
 
 > Currently, the fetching API stays inside the `Home` component which means that the `products` data will be available only if users access the main page first. However, we just created a couple of pages that also need to use the `products` data. Therefore, we will need to lift the state up to the `App` component
 
-1. In the `Home` company:
+1. In the `Home` component:
 
    - Move the `products` state and the `useEffect` hook to the `App` component
    - Accept a new property called `products`
