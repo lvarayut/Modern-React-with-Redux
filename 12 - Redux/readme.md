@@ -101,7 +101,7 @@
      useEffect(() => {
        async function getProducts() {
          const products = await axios.get(
-           'https://run.mocky.io/v3/a091c6f3-dd51-43c8-973a-c7b6fd07a84a'
+           'https://apimocha.com/react-redux-class/products'
          );
      -   setProducts(products.data);
      +   dispatch(fetchProducts(products.data));
